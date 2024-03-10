@@ -1,0 +1,130 @@
+{
+  "comunidades": [
+    {
+      "nombre": "Conferencia de Tecnología",
+      "descripcion": "Explorando las últimas tendencias tecnológicas",
+      "ubicacion": "Florida",
+      "categoria": "Trabajo",
+      "suscriptores": 150,
+      "eventos": [
+        {
+          "nombre": "Introducción a la Inteligencia Artificial",
+          "fecha": "2025/01/15",
+          "hora": "09:00",
+          "lugar": "Plataforma Virtual"
+        },
+        {
+          "nombre": "Desarrollo de Aplicaciones Móviles",
+          "fecha": "2025/02/20",
+          "hora": "14:30",
+          "lugar": "Sesión Online"
+        }
+      ]
+    },
+    {
+      "nombre": "Evento Cultural en Colombia",
+      "descripcion": "Descubre la riqueza cultural de Colombia",
+      "ubicacion": "Bogota",
+      "categoria": "Recreacion",
+      "suscriptores": 80,
+      "eventos": [
+        {
+          "nombre": "Festival de Cine Colombiano",
+          "fecha": "2025/05/10",
+          "hora": "18:00",
+          "lugar": "Cines Locales"
+        },
+        {
+          "nombre": "Concierto de Música Tradicional",
+          "fecha": "2025/06/18",
+          "hora": "20:00",
+          "lugar": "Teatro Nacional"
+        }
+      ]
+    },
+    {
+      "nombre": "Conferencia Educativa",
+      "descripcion": "Explorando nuevas metodologías educativas",
+      "ubicacion": "Colombia",
+      "categoria": "Laboral",
+      "suscriptores": 120,
+      "eventos": [
+        {
+          "nombre": "Herramientas Innovadoras para Docentes",
+          "fecha": "2025/03/25",
+          "hora": "15:30",
+          "lugar": "Plataforma Virtual"
+        },
+        {
+          "nombre": "Tendencias en Educación a Distancia",
+          "fecha": "2025/04/08",
+          "hora": "10:00",
+          "lugar": "Sesión Online"
+        }
+      ]
+    },
+    {
+      "nombre": "Festividades Locales",
+      "descripcion": "Celebraciones locales para disfrutar en comunidad",
+      "ubicacion": "Cali",
+      "categoria": "Recreacion",
+      "suscriptores": 200,
+      "eventos": [
+        {
+          "nombre": "Desfile de Carnaval",
+          "fecha": "2025/07/02",
+          "hora": "13:00",
+          "lugar": "Calles del Centro"
+        },
+        {
+          "nombre": "Feria Gastronómica",
+          "fecha": "2025/08/15",
+          "hora": "10:30",
+          "lugar": "Plaza Principal"
+        }
+      ]
+    },
+    {
+      "nombre": "Charlas de Bienestar",
+      "descripcion": "Sesiones para mejorar la salud y el bienestar",
+      "ubicacion": "Ciudad de Mexico",
+      "categoria": "Recreacion",
+      "suscriptores": 90,
+      "eventos": [
+        {
+          "nombre": "Mindfulness y Meditación",
+          "fecha": "2025/09/12",
+          "hora": "08:00",
+          "lugar": "Plataforma Virtual"
+        },
+        {
+          "nombre": "Consejos para una Vida Saludable",
+          "fecha": "2025/10/05",
+          "hora": "12:30",
+          "lugar": "Sesión Online"
+        }
+      ]
+    },
+    {
+      "nombre": "Conferencia Ambiental",
+      "descripcion": "Explorando soluciones para la sostenibilidad",
+      "ubicacion": "Peru",
+      "categoria": "Laboral",
+      "suscriptores": 150,
+      "eventos": [
+        {
+          "nombre": "Energías Renovables",
+          "fecha": "2025/11/08",
+          "hora": "14:00",
+          "lugar": "Plataforma Virtual"
+        },
+        {
+          "nombre": "Reciclaje y Reducción de Residuos",
+          "fecha": "2025/12/03",
+          "hora": "09:30",
+          "lugar": "Sesión Online"
+        }
+      ]
+    }
+  ]
+}

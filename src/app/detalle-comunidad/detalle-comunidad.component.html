@@ -1,0 +1,75 @@
+<mat-toolbar color="primary">
+    <mat-icon>menu</mat-icon>
+    <span class="title">RemindMe</span>
+    <span class="spacer"></span>
+    <span class="option">Reportes</span>
+    <span class="option" (click)="navigateTo('comunidades')">Comunidades</span>
+    <span class="option">Cerrar Sesión</span>
+</mat-toolbar>
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-10">
+            <div class="titleAlarm">
+                <img src="../../assets/rec_logo.png" alt="Icono" class="icon" />
+                <span class="alarm-title">{{ comunidadDetalle.nombre }}</span>
+            </div>
+        </div>
+        <div class="col-md-2 align-right">
+            <div>
+                <button class="button-comunity" (click)="navigateTo('comunidades')">Eliminar Suscripción</button>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <p class="descripcion">{{ comunidadDetalle.descripcion }}</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <p class="descripcion">Ubicación {{ comunidadDetalle.ubicacion }}</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <p class="descripcion">Categoría {{ comunidadDetalle.categoria }}</p>
+        </div>
+    </div>
+</div>
+
+<!-- Table Section for Events -->
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="table">
+                <mat-table [dataSource]="comunidadDetalle?.eventos" class="mat-elevation-z8">
+                    <!-- Nombre Column -->
+                    <ng-container matColumnDef="nombre">
+                        <mat-header-cell *matHeaderCellDef> Nombre </mat-header-cell>
+                        <mat-cell *matCellDef="let evento"> {{evento.nombre}} </mat-cell>
+                    </ng-container>
+
+                    <!-- Fecha Column -->
+                    <ng-container matColumnDef="fecha">
+                        <mat-header-cell *matHeaderCellDef> Fecha </mat-header-cell>
+                        <mat-cell *matCellDef="let evento"> {{evento.fecha}} </mat-cell>
+                    </ng-container>
+
+                    <mat-header-row *matHeaderRowDef="['nombre', 'fecha']"></mat-header-row>
+                    <mat-row *matRowDef="let row; columns: ['nombre', 'fecha'];"></mat-row>
+                </mat-table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="button-container">
+            <div class="col-md-12">
+                <button class="button-crear" >Crear Evento</button>
+            </div>
+        </div>
+    </div>
+</div>
