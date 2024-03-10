@@ -29,7 +29,6 @@
         <div class="col-md-12">
             <div class="table">
                 <mat-table [dataSource]="comunidadesData" class="mat-elevation-z8">
-                    <!-- Nombre Column -->
                     <ng-container matColumnDef="nombre">
                         <mat-header-cell *matHeaderCellDef> Nombre </mat-header-cell>
                         <mat-cell *matCellDef="let comunidad" (click)="navigateToDetails(comunidad.nombre)">
@@ -39,20 +38,14 @@
                             </div>
                         </mat-cell>
                     </ng-container>
-
-                    <!-- Descripcion Column -->
                     <ng-container matColumnDef="descripcion">
                         <mat-header-cell *matHeaderCellDef> Descripcion </mat-header-cell>
                         <mat-cell *matCellDef="let comunidad"> {{comunidad.descripcion}} </mat-cell>
                     </ng-container>
-
-                    <!-- Suscriptores Column -->
                     <ng-container matColumnDef="suscriptores">
                         <mat-header-cell *matHeaderCellDef> Suscriptores </mat-header-cell>
                         <mat-cell *matCellDef="let comunidad"> {{comunidad.suscriptores}} </mat-cell>
                     </ng-container>
-
-                    <!-- Acciones Column -->
                     <ng-container matColumnDef="acciones">
                         <mat-header-cell *matHeaderCellDef> Acciones </mat-header-cell>
                         <mat-cell *matCellDef="let comunidad">
@@ -60,7 +53,7 @@
                                 <button class="accion-button" (click)="suscribir(comunidad)">
                                     Suscribir
                                 </button>
-                                <button class="accion-button" (click)="crearEvento(comunidad)">
+                                <button class="accion-button" (click)="crearEvento(comunidad.nombre)">
                                     Crear Evento
                                 </button>
                             </div>
