@@ -1,77 +1,78 @@
-<app-toolbar></app-toolbar>
-<div class="container mt-4">
-    <div class="row">
+<app-toolbar>
+  <div class="content">
+    <div class="container mt-4">
+      <div class="row">
         <div class="col-md-12">
-            <div class="titleAlarm">
-                <img src="../../assets/comunidades.png" alt="Icono" class="icon" />
-                <span class="alarm-title">Comunidades</span>
-            </div>
+          <div class="titleAlarm">
+            <img src="../../assets/comunidades.png" alt="Icono" class="icon" />
+            <span class="alarm-title">Comunidades</span>
+          </div>
         </div>
+      </div>
     </div>
-</div>
-<div class="container mt-4 center-content">
-    <div class="row">
+    <div class="container mt-4 center-content">
+      <div class="row">
         <div class="col-md-12">
-            <mat-form-field>
-                <mat-label>Nombre</mat-label>
-                <input matInput [(ngModel)]="inputField">
-            </mat-form-field>
+          <mat-form-field class="form-input">
+            <mat-label>Nombre</mat-label>
+            <input matInput [(ngModel)]="inputField">
+          </mat-form-field>
         </div>
-    </div>
-    <div class="row">
+      </div>
+      <div class="row">
         <div class="col-md-12">
-            <mat-form-field>
-                <mat-label>Descripción</mat-label>
-                <input matInput [(ngModel)]="descripcionField">
-            </mat-form-field>
+          <mat-form-field class="form-input">
+            <mat-label>Descripción</mat-label>
+            <input matInput [(ngModel)]="descripcionField">
+          </mat-form-field>
         </div>
-    </div>
-    <div class="row">
+      </div>
+      <div class="row">
         <div class="col-md-12">
-            <mat-form-field>
-                <mat-label>Ubicación</mat-label>
-                <mat-select [(ngModel)]="ubicacionField">
-                    <mat-option value="1">Colombia</mat-option>
-                    <mat-option value="2">Bogota</mat-option>
-                    <mat-option value="3">Medellín</mat-option>
-                    <mat-option value="4">Cali</mat-option>
-                </mat-select>
-            </mat-form-field>
+          <mat-form-field class="form-input">
+            <mat-label>Ubicación</mat-label>
+            <mat-select [(ngModel)]="ubicacionField">
+              <mat-option value="1">Colombia</mat-option>
+              <mat-option value="2">Bogota</mat-option>
+              <mat-option value="3">Medellín</mat-option>
+              <mat-option value="4">Cali</mat-option>
+            </mat-select>
+          </mat-form-field>
         </div>
-    </div>
-    <div class="row">
+      </div>
+      <div class="row">
         <div class="col-md-12">
-            <mat-form-field>
-                <mat-label>Categoria</mat-label>
-                <mat-select [(ngModel)]="categoriaField">
-                    <mat-option value="1">Laboral</mat-option>
-                    <mat-option value="2">Recreación</mat-option>
-                </mat-select>
-            </mat-form-field>
+          <mat-form-field class="form-input">
+            <mat-label>Categoria</mat-label>
+            <mat-select [(ngModel)]="categoriaField">
+              <mat-option value="1">Laboral</mat-option>
+              <mat-option value="2">Recreación</mat-option>
+            </mat-select>
+          </mat-form-field>
         </div>
-    </div>
-    <div class="row">
-        <div class="col-md-5">
-            <mat-form-field>
-                <mat-label>Imagen</mat-label>
-                <input matInput [(ngModel)]="selectedFileName" readonly>
-            </mat-form-field>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <mat-form-field class="form-input">
+            <mat-label>Imagen</mat-label>
+            <input matInput [(ngModel)]="selectedFileName" readonly>
+          </mat-form-field>
         </div>
         <div class="col-md-2">
-            <div class="button-container">
-                <button class="image-button" (click)="fileInput.click()">
-                    <mat-icon class="icon">file_upload</mat-icon>
-                    <span>Elegir imagen</span>
-                </button>
-            </div>
-            <input type="file" #fileInput style="display: none" (change)="handleFileInput($event)">
+          <div class="button-container">
+            <button class="image-button" (click)="fileInput.click()">
+              <mat-icon class="icon">file_upload</mat-icon>
+              <span>Elegir imagen</span>
+            </button>
+          </div>
+          <input type="file" #fileInput style="display: none" (change)="handleFileInput($event)">
         </div>
-    </div>
-    <div class="row">
-        <div class="button-container">
-            <div class="col-md-12">
-                <button class="create-button" (click)="createComunity()">Create</button>
-            </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <button class="create-button" (click)="createComunity()">Create</button>
         </div>
+      </div>
     </div>
-</div>
+  </div>
+</app-toolbar>

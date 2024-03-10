@@ -1,64 +1,66 @@
-<app-toolbar></app-toolbar>
-
-<div class="container mt-4">
-    <div class="row">
+<app-toolbar>
+  <div class="content">
+    <div class="container mt-4">
+      <div class="row">
         <div class="col-md-10">
-            <div class="titleAlarm">
-                <img src="../../assets/comunidades.png" alt="Icono" class="icon" />
-                <span class="alarm-title">Comunidades</span>
-            </div>
+          <div class="titleAlarm">
+            <img src="../../assets/comunidades.png" alt="Icono" class="icon" />
+            <span class="alarm-title">Comunidades</span>
+          </div>
         </div>
         <div class="col-md-2 align-right">
-            <div>
-                <button class="buttonComunity" (click)="navigateTo('crearcomunidad')">Crear Comunidad</button>
-            </div>
+          <div>
+            <button class="buttonComunity" (click)="navigateTo('crearcomunidad')">Crear Comunidad</button>
+          </div>
         </div>
+      </div>
     </div>
-</div>
 
-<!-- Table Section -->
-<div class="container mt-4">
-    <div class="row">
+    <!-- Table Section -->
+    <div class="container mt-4">
+      <div class="row">
         <div class="col-md-12">
-            <div class="table">
-                <mat-table [dataSource]="comunidadesData" class="mat-elevation-z8">
-                    <ng-container matColumnDef="nombre">
-                        <mat-header-cell *matHeaderCellDef> Nombre </mat-header-cell>
-                        <mat-cell *matCellDef="let comunidad" (click)="navigateToDetails(comunidad.nombre)">
-                            <div class="image-container">
-                                <img src="../../assets/rec_logo.png" class="logo" alt="Logo" class="logo">
-                                <span>{{comunidad.nombre}}</span>
-                            </div>
-                        </mat-cell>
-                    </ng-container>
-                    <ng-container matColumnDef="descripcion">
-                        <mat-header-cell *matHeaderCellDef> Descripcion </mat-header-cell>
-                        <mat-cell *matCellDef="let comunidad"> {{comunidad.descripcion}} </mat-cell>
-                    </ng-container>
-                    <ng-container matColumnDef="suscriptores">
-                        <mat-header-cell *matHeaderCellDef> Suscriptores </mat-header-cell>
-                        <mat-cell *matCellDef="let comunidad"> {{comunidad.suscriptores}} </mat-cell>
-                    </ng-container>
-                    <ng-container matColumnDef="acciones">
-                        <mat-header-cell *matHeaderCellDef> Acciones </mat-header-cell>
-                        <mat-cell *matCellDef="let comunidad">
-                            <div class="button-container">
-                                <button class="accion-button" (click)="suscribir(comunidad)">
-                                    Suscribir
-                                </button>
-                                <button class="accion-button" (click)="crearEvento(comunidad.nombre)">
-                                    Crear Evento
-                                </button>
-                            </div>
-                        </mat-cell>
-                    </ng-container>
+          <div class="table">
+            <mat-table [dataSource]="comunidadesData" class="mat-elevation-z8">
+              <ng-container matColumnDef="nombre">
+                <mat-header-cell *matHeaderCellDef> Nombre </mat-header-cell>
+                <mat-cell *matCellDef="let comunidad" (click)="navigateToDetails(comunidad.nombre)">
+                  <div class="image-container">
+                    <img src="../../assets/rec_logo.png" class="logo" alt="Logo" class="logo">
+                    <span>{{comunidad.nombre}}</span>
+                  </div>
+                </mat-cell>
+              </ng-container>
+              <ng-container matColumnDef="descripcion">
+                <mat-header-cell *matHeaderCellDef> Descripcion </mat-header-cell>
+                <mat-cell *matCellDef="let comunidad"> {{comunidad.descripcion}} </mat-cell>
+              </ng-container>
+              <ng-container matColumnDef="suscriptores">
+                <mat-header-cell *matHeaderCellDef> Suscriptores </mat-header-cell>
+                <mat-cell *matCellDef="let comunidad"> {{comunidad.suscriptores}} </mat-cell>
+              </ng-container>
+              <ng-container matColumnDef="acciones">
+                <mat-header-cell *matHeaderCellDef> Acciones </mat-header-cell>
+                <mat-cell *matCellDef="let comunidad">
+                  <div class="button-container">
+                    <button class="accion-button" (click)="suscribir(comunidad)">
+                      Suscribir
+                    </button>
+                    <button class="accion-button" (click)="crearEvento(comunidad.nombre)">
+                      Crear Evento
+                    </button>
+                  </div>
+                </mat-cell>
+              </ng-container>
 
-                    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
-                    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
-                </mat-table>
-                <mat-paginator [pageSizeOptions]="[20]" showFirstLastButtons aria-label="Select page of comunidades">
-                </mat-paginator>
-            </div>
+              <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+              <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+            </mat-table>
+            <mat-paginator [pageSizeOptions]="[20]" showFirstLastButtons aria-label="Select page of comunidades">
+            </mat-paginator>
+          </div>
         </div>
+      </div>
     </div>
-</div>
+  </div>
+</app-toolbar>
