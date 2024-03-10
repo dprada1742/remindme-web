@@ -73,8 +73,7 @@ body {
 }
 
 .custom-icon {
-  width: 100px; /* Set the width and height as needed */
-  height: 100px;
+  transform: scale(2);
   background: url('../../assets/rec_logo.png') center/cover no-repeat; /* Adjust the path accordingly */
 }
 
