@@ -1,9 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatTableModule, MatTableDataSource } from '@angular/material/table';
-import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatPaginator, MatPaginatorModule } from '@angular/material/paginator';
 import { Router } from '@angular/router';
 import { comunidades } from '../../assets/Comunidades.json';
 import { ToolbarComponent } from "../toolbar/toolbar.component";
@@ -22,7 +22,8 @@ export class ComunidadesComponent implements OnInit {
 
   constructor(private router: Router) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+  }
 
   navigateTo(route: string): void {
     this.router.navigate([route]);
@@ -31,7 +32,7 @@ export class ComunidadesComponent implements OnInit {
   suscribir(route: string): void {
   }
 
-  crearEvento(nombre: string): void {  
+  crearEvento(nombre: string): void {
     this.router.navigate(['/crearevento', nombre]);
   }
 

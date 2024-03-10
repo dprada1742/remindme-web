@@ -1,5 +1,5 @@
 <mat-toolbar color="primary">
-  <button mat-icon-button (click)="toggleSideMenu()">
+  <button mat-icon-button (click)="drawer.toggle()">
     <mat-icon>menu</mat-icon>
   </button>
   <span class="title" (click)="navigateTo('home')">RemindMe</span>
@@ -9,4 +9,29 @@
   <span class="option" (click)="navigateTo('/')">Cerrar Sesión</span>
 </mat-toolbar>
 
-
+<mat-drawer-container class="example-container">
+  <mat-drawer #drawer mode="over">
+    <div class="drawer-content">
+      <div class="drawer-section">
+        <div class="drawer-title"><b>Categorias</b></div>
+        <mat-nav-list>
+          <a mat-list-item (click)="navigateTo('home')">Personal</a>
+          <a mat-list-item (click)="navigateTo('home')">Laboral</a>
+          <a mat-list-item (click)="navigateTo('home')">Recreación</a>
+        </mat-nav-list>
+      </div>
+      <mat-divider class="divider"></mat-divider>
+      <div class="drawer-section">
+        <div class="drawer-title"><b>Tus comunidades</b></div>
+        <mat-nav-list>
+          <a mat-list-item (click)="navigateToDetails('Conferencia Educativa')">Conferencia Educativa</a>
+          <a mat-list-item (click)="navigateToDetails('Conferencia de Tecnología')">Conferencia de Tecnología</a>
+          <a mat-list-item (click)="navigateToDetails('Charlas de Bienestar')">Charlas de Bienestar</a>
+        </mat-nav-list>
+      </div>
+    </div>
+  </mat-drawer>
+  <mat-drawer-content>
+    <ng-content></ng-content>
+  </mat-drawer-content>
+</mat-drawer-container>

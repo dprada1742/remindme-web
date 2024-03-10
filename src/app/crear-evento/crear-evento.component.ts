@@ -12,12 +12,13 @@ import {MatSelectModule} from '@angular/material/select';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatMomentDateModule } from '@angular/material-moment-adapter';
 import { NgxMaterialTimepickerModule } from 'ngx-material-timepicker';
+import { ToolbarComponent } from '../toolbar/toolbar.component';
 
 
 @Component({
   selector: 'app-crear-evento',
   standalone: true,
-  imports: [FormsModule, MatInputModule, MatFormFieldModule, MatSelectModule, MatToolbarModule, MatIconModule, MatDatepickerModule, MatMomentDateModule, NgxMaterialTimepickerModule],
+  imports: [FormsModule, MatInputModule, MatFormFieldModule, MatSelectModule, MatToolbarModule, MatIconModule, MatDatepickerModule, MatMomentDateModule, NgxMaterialTimepickerModule, ToolbarComponent],
   templateUrl: './crear-evento.component.html',
   styleUrl: './crear-evento.component.css'
 })

@@ -72,4 +72,16 @@ body {
   align-items: center;
 }
 
+.mat-drawer {
+  background: var(--M3-sys-light-primary-container, #18C2C1);
+  min-height: 100vh; /* Set the minimum width to the width of the viewport */
+}
 
+.drawer-content{
+  padding-left: 16px;
+}
+
+.divider{
+  padding-top: 16px;
+  padding-bottom: 16px;
+}

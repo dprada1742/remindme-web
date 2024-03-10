@@ -1,119 +1,51 @@
-body {
-    background-color: #f1f7f7;
-  }
-  
-  .mat-toolbar {
-    background: var(--M3-sys-light-primary-container, #18C2C1);
-  }
-  
-  .title {
-    display: flex;
-    align-items: center;
-    color: var(--M3-sys-light-on-primary-fixed, #002020);
-    font-family: Roboto;
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 28px;
-    margin-left: 28px;
-  }
-  
-  .titleAlarm {
-    display: flex;
-    align-items: center;
-    color: var(--M3-sys-light-on-primary-fixed, #006A69);
-    font-family: Roboto;
-    font-size: 45px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 52px;
-    margin-top: 100px;
-  }
-  
-  .subTitle {
-    color: var(--M3-sys-light-primary, #006A69);
-    font-family: Roboto;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 32px;
-    margin-left: 200px;
-    margin-top: 50px;
-  }
-  
-  .spacer {
-    flex: 1 1 auto;
-  }
-  
-  .option {
-    color: #000;
-    text-align: center;
-    font-family: Roboto;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 24px;
-    letter-spacing: 0.5px;
-    cursor: pointer;
-    margin-left: 16px;
-  }
-  
-  .option:hover {
-    text-decoration: underline;
-  }
-  
-  .page-content {
-    padding: 16px;
-  }
-  
-  .title {
-    display: flex;
-    align-items: center;
-  }
+.titleAlarm {
+  display: flex;
+  align-items: center;
+  color: var(--M3-sys-light-on-primary-fixed, #006a69);
+  font-family: Roboto;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 52px;
+  margin-top: 100px;
+}
 
-  .container {
-    margin-top: 50px;
-    margin-left: 100px;
-    margin-right: 100px;
-  }
+.logo {
+  height: 28px;
+  width: 28px;
+  margin-right: 10px;
+}
 
-  .logo {
-    height: 28px;
-    width: 28px;
-    margin-right: 100px;
-  }
+.accion-button {
+  border: none;
+  border-radius: 100px;
+  background: var(--M3-sys-light-secondary-container, #fdda62);
+  color: var(--M3-sys-light-on-secondary-container, #564600);
+  text-align: center; /* Centra horizontalmente el texto */
+  font-family: Roboto;
+  margin-left: 10px;
+}
 
-  .accion-button {
-    border: none;
-    border-radius: 100px;
-    background: var(--M3-sys-light-secondary-container, #FDDA62);
-    color: var(--M3-sys-light-on-secondary-container, #564600);
-    text-align: center; /* Centra horizontalmente el texto */
-    font-family: Roboto;
-  }
+.buttonComunity {
+  border: none;
+  border-radius: 100px;
+  background: var(--M3-sys-light-secondary-container, #fdda62);
+  width: 180px;
+  height: 30px;
+  color: var(--M3-sys-light-on-secondary-container, #564600);
+  text-align: center;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.1px;
+}
 
-  .buttonComunity {
-    border: none;
-    border-radius: 100px;
-    background: var(--M3-sys-light-secondary-container, #FDDA62);
-    width: 180px;
-    height: 24px;
-    color: var(--M3-sys-light-on-secondary-container, #564600);
-    text-align: center;
-    font-family: Roboto;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 20px;
-    letter-spacing: 0.1px;
-  }
-
-  .align-right {
-    display: flex;
-    justify-content: flex-end;
-  }
-
-  
-  
-  
-  
+.align-right {
+  display: flex;
+  justify-content: flex-end;
+}
+.content {
+  min-height: 90vh; /* Ensure minimum height of viewport */
+}
