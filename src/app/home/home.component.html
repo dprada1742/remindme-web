@@ -2,18 +2,61 @@
   <div class="container mt-4">
     <div class="row">
       <div class="col-md-12">
-        <!-- Add the Bootstrap grid classes to align the content in column 3 -->
         <div class="titleAlarm">
-          <img src="../../assets/alarma_home.png" alt="Icono" class="icon" />
+          <img src="../../assets/alarma_home.png" alt="Icono" />
           <span class="alarm-title">Alarmas</span>
         </div>
       </div>
+    </div>
+  </div>
+  <div class="container mt-4">
+    <div class="row">
       <div class="col-md-12 mt-4">
         <div class="subTitle">
           <span>Esta Semana</span>
         </div>
       </div>
+      <div class="col-md-8">
+        <mat-list>
+          <ng-container *ngFor="let alarm of alarms1List">
+            <mat-list-item class="itemList">
+              <mat-icon matListItemIcon class="custom-icon"></mat-icon>
+              <div matListItemTitle class="category">{{alarm.category}}</div>
+              <div matListItemLine class="bold">{{alarm.name}}</div>
+              <div matListItemLine>{{alarm.fecha}} • {{alarm.time}} • {{alarm.location}}</div>
+            </mat-list-item>
+          </ng-container>
+        </mat-list>
+      </div>
+      <div class="col-md-4">
+        <mat-form-field>
+          <mat-label>Seleccionar Fecha</mat-label>
+          <input matInput [matDatepicker]="picker" placeholder="Seleccionar fecha">
+          <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+          <mat-datepicker #picker [opened]="true"></mat-datepicker>
+        </mat-form-field>
+      </div>
     </div>
   </div>
-
+  <div class="container mt-4">
+    <div class="row">
+      <div class="col-md-12 mt-4">
+        <div class="subTitle">
+          <span>Proxima Semana</span>
+        </div>
+      </div>
+      <div class="col-md-8">
+        <mat-list>
+          <ng-container *ngFor="let alarm of alarms2List">
+            <mat-list-item class="itemList">
+              <mat-icon matListItemIcon class="custom-icon"></mat-icon>
+              <div matListItemTitle class="category">{{alarm.category}}</div>
+              <div matListItemLine class="bold">{{alarm.name}}</div>
+              <div matListItemLine>{{alarm.fecha}} • {{alarm.time}} • {{alarm.location}}</div>
+            </mat-list-item>
+          </ng-container>
+        </mat-list>
+      </div>
+    </div>
+  </div>
 </app-toolbar>

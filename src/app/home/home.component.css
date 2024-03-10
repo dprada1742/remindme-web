@@ -15,7 +15,6 @@ body {
   font-style: normal;
   font-weight: 600;
   line-height: 28px;
-  margin-left: 28px;
 }
 
 .titleAlarm {
@@ -27,7 +26,6 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 52px;
-  margin-left: 200px;
   margin-top: 100px;
 }
 
@@ -38,8 +36,6 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 32px;
-  margin-left: 200px;
-  margin-top: 50px;
 }
 
 .spacer {
@@ -59,17 +55,26 @@ body {
   margin-left: 16px;
 }
 
-.option:hover {
-  text-decoration: underline;
+.itemList {
+  background-color: white !important;
+  border: 1px solid #f1f7f7;
+  border-radius: 5px;
+  margin-bottom: 10px;
 }
 
-.page-content {
-  padding: 16px;
+.bold {
+  font-weight: bold;
+  color: black;
 }
 
-.title {
-  display: flex;
-  align-items: center;
+.category
+{
+  color: var(--M3-sys-light-on-primary-fixed, #006A69);
 }
 
+.custom-icon {
+  width: 100px; /* Set the width and height as needed */
+  height: 100px;
+  background: url('../../assets/rec_logo.png') center/cover no-repeat; /* Adjust the path accordingly */
+}
 
