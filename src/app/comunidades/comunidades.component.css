@@ -46,6 +46,7 @@
   display: flex;
   justify-content: flex-end;
 }
+
 .content {
   min-height: 90vh; /* Ensure minimum height of viewport */
 }

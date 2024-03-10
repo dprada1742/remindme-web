@@ -67,11 +67,6 @@ body {
   padding: 16px;
 }
 
-.title {
-  display: flex;
-  align-items: center;
-}
-
 .mat-drawer {
   background: var(--M3-sys-light-primary-container, #18C2C1);
   min-height: 100vh; /* Set the minimum width to the width of the viewport */
