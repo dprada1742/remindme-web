@@ -1,0 +1,39 @@
+{
+  "alarms2": [
+  {
+    "name": "Cita con el médico",
+    "time": "6:15 PM",
+    "location": "Clínica",
+    "category": "Personal",
+    "fecha": "15/03/2024"
+  },
+  {
+    "name": "Enviar informe",
+    "time": "9:30 AM",
+    "location": "Oficina",
+    "category": "Trabajo",
+    "fecha": "15/03/2024"
+  },
+  {
+    "name": "Comida con amigos",
+    "time": "12:45 PM",
+    "location": "Restaurante",
+    "category": "Recreacion",
+    "fecha": "16/03/2024"
+  },
+  {
+    "name": "Junta de equipo",
+    "time": "3:00 PM",
+    "location": "Oficina",
+    "category": "Trabajo",
+    "fecha": "16/03/2024"
+  },
+  {
+    "name": "Completar proyecto",
+    "time": "5:30 PM",
+    "location": "Oficina",
+    "category": "Trabajo",
+    "fecha": "17/03/2024"
+  }
+]
+}
