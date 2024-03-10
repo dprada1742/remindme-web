@@ -1,0 +1,47 @@
+.title {
+  display: flex;
+  align-items: center;
+  color: var(--M3-sys-light-on-primary-fixed, #006A69);
+  font-family: Roboto;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 52px;
+  margin-top: 100px;
+}
+
+/* Subtitle styles */
+.subtitle {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+  color: var(--M3-sys-light-on-primary-fixed, #006A69);
+  margin-bottom: 15px;
+}
+
+/* Text styles */
+.text {
+  margin-bottom: 20px;
+}
+
+/* Chart container styles */
+.chart-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Individual chart styles */
+.chart {
+  width: 80%;
+  margin-right: 20px;
+}
+
+.pie-chart {
+  width: 20%;
+}
+
+/* Additional space between charts */
+.chart:not(:last-child) {
+  margin-right: 0;
+  margin-bottom: 20px; /* Add some space between rows */
+}

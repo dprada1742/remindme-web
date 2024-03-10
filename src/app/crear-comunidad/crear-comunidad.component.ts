@@ -8,13 +8,14 @@ import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { FormsModule } from '@angular/forms';
 import { comunidades } from '../../assets/Comunidades.json';
+import { ToolbarComponent } from "../toolbar/toolbar.component";
 
 @Component({
-  selector: 'app-crear-comunidad',
-  standalone: true,
-  imports: [FormsModule, MatInputModule, MatFormFieldModule, MatSelectModule, MatToolbarModule, MatIconModule, MatButtonModule],
-  templateUrl: './crear-comunidad.component.html',
-  styleUrl: './crear-comunidad.component.css'
+    selector: 'app-crear-comunidad',
+    standalone: true,
+    templateUrl: './crear-comunidad.component.html',
+    styleUrl: './crear-comunidad.component.css',
+    imports: [FormsModule, MatInputModule, MatFormFieldModule, MatSelectModule, MatToolbarModule, MatIconModule, MatButtonModule, ToolbarComponent]
 })
 export class CrearComunidadComponent {
   selectedFileName: string = '';
