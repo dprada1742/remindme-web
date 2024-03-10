@@ -37,4 +37,7 @@ export class DetalleComunidadComponent implements OnInit{
     this.router.navigate([route]);
   }
 
+  crearEvento(nombre: string): void {  
+    this.router.navigate(['/crearevento', nombre]);
+  }
 }

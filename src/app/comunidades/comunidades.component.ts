@@ -31,7 +31,8 @@ export class ComunidadesComponent implements OnInit {
   suscribir(route: string): void {
   }
 
-  crearEvento(route: string): void {
+  crearEvento(nombre: string): void {  
+    this.router.navigate(['/crearevento', nombre]);
   }
 
   navigateToDetails(nombre: string): void {
