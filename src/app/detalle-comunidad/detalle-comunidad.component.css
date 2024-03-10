@@ -102,3 +102,7 @@ body {
     line-height: 20px;
     letter-spacing: 0.1px;
   }
+
+  .content {
+    min-height: 90vh; /* Ensure minimum height of viewport */
+  }
