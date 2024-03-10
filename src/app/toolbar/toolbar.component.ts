@@ -3,20 +3,19 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { Router } from '@angular/router';
-import { ToolbarComponent } from "../toolbar/toolbar.component";
 
 @Component({
-    selector: 'app-home',
-    standalone: true,
-    templateUrl: './home.component.html',
-    styleUrl: './home.component.css',
-    imports: [MatToolbarModule, MatButtonModule, MatIconModule, ToolbarComponent]
+  selector: 'app-toolbar',
+  standalone: true,
+  imports: [MatToolbarModule, MatButtonModule, MatIconModule],
+  templateUrl: './toolbar.component.html',
+  styleUrls: ['./toolbar.component.css']
 })
-export class HomeComponent {
+export class ToolbarComponent {
+
   constructor(private router: Router) {}
 
   navigateTo(route: string): void {
     this.router.navigate([route]);
   }
-
 }

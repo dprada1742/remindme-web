@@ -6,13 +6,14 @@ import { MatTableModule, MatTableDataSource } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { Router } from '@angular/router';
 import { comunidades } from '../../assets/Comunidades.json';
+import { ToolbarComponent } from "../toolbar/toolbar.component";
 
 @Component({
-  selector: 'app-comunidades',
-  standalone: true,
-  imports: [MatToolbarModule, MatButtonModule, MatIconModule, MatTableModule, MatPaginatorModule],
-  templateUrl: './comunidades.component.html',
-  styleUrls: ['./comunidades.component.css']
+    selector: 'app-comunidades',
+    standalone: true,
+    templateUrl: './comunidades.component.html',
+    styleUrls: ['./comunidades.component.css'],
+    imports: [MatToolbarModule, MatButtonModule, MatIconModule, MatTableModule, MatPaginatorModule, ToolbarComponent]
 })
 export class ComunidadesComponent implements OnInit {
   displayedColumns: string[] = ['nombre', 'descripcion', 'suscriptores', 'acciones'];
@@ -27,10 +28,10 @@ export class ComunidadesComponent implements OnInit {
     this.router.navigate([route]);
   }
 
-  suscribir(route: string): void {  
+  suscribir(route: string): void {
   }
 
-  crearEvento(route: string): void {  
+  crearEvento(route: string): void {
   }
 
   navigateToDetails(nombre: string): void {
