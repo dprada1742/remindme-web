@@ -61,8 +61,12 @@ body {
   color: var(--M3-sys-light-on-secondary-container, #564600);
   text-align: center; /* Centra horizontalmente el texto */
   font-family: Roboto;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 500;
   line-height: 20px;
   letter-spacing: 0.1px;
+}
+
+a {
+  text-decoration: none;
 }

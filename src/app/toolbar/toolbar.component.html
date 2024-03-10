@@ -1,8 +1,12 @@
 <mat-toolbar color="primary">
-  <mat-icon>menu</mat-icon>
-  <span class="title">RemindMe</span>
+  <button mat-icon-button (click)="toggleSideMenu()">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span class="title" (click)="navigateTo('home')">RemindMe</span>
   <span class="spacer"></span>
-  <span class="option" >Reportes</span>
+  <span class="option" (click)="navigateTo('reportes')">Reportes</span>
   <span class="option" (click)="navigateTo('comunidades')">Comunidades</span>
-  <span class="option" >Cerrar Sesión</span>
+  <span class="option" (click)="navigateTo('/')">Cerrar Sesión</span>
 </mat-toolbar>
+
+
